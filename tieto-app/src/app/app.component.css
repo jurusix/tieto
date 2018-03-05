@@ -1,0 +1,21 @@
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.inner  {
+  padding: 20px;
+}
+.contract {
+  width: 49.5%;
+  float: left;
+  margin: 1px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+  .contract {
+    width:100%;
+  }
+}

@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>
+    Heat contracts
+  </h1>
+  <div *ngFor="let item of heatItems" class="contract">
+    <div class="inner">
+        <h2> {{ item.Name }}  </h2>
+        <ul>
+          <li>Price:  {{ item.Price }} eur</li>
+          <li>Temperatures: <span *ngFor="let number of item.Temperatures"> {{ number }}°C,   </span></li>
+        </ul>
+    </div>
+  </div>
+  <div style="clear:both"> </div>
+  <h1>
+    Electricity contracts
+  </h1>
+  <div *ngFor="let item of electricityItems" class="contract">
+    <div class="inner">
+        <h2> {{ item.Name }}  </h2>
+        <ul>
+            <li>Price:  {{ item.Price }} eur</li>
+            <li>House type: {{ buildingType[item.Type] }} </li>
+          </ul>
+    </div>
+  </div>
+</div>
